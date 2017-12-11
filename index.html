@@ -28,6 +28,11 @@
     <meta name="msapplication-TileColor" content="#14171b">
 
     <link rel="stylesheet" type="text/css" href="app.css">
+    <style>
+canvas {
+    border: 1px solid black;
+}
+</style>
   </head>
 
   <body>
@@ -119,5 +124,18 @@
         navigator.serviceWorker
           .register('service-worker.js', {scope: '.'});
       }
+      <button onclick="myFunction()">Try it</button>
+
+<p>Click the button to create a CANVAS element, with drawings (a red rectangle).</p>
+
+<script>
+function myFunction() {
+    var x = document.createElement("CANVAS");
+    var ctx = x.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(20, 20, 150, 100);
+    document.body.appendChild(x);
+}
+</script>
   </body>
 </html>
