@@ -36,6 +36,20 @@ canvas {
   </head>
 
   <body>
+    
+    <button onclick="myFunction()">Try it</button>
+
+<p>Click the button to create a CANVAS element, with drawings (a red rectangle).</p>
+
+<script>
+function myFunction() {
+    var x = document.createElement("CANVAS");
+    var ctx = x.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(20, 20, 150, 100);
+    document.body.appendChild(x);
+}
+</script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Minimalist AutoSize Responsive -->
 <ins class="adsbygoogle"
@@ -124,18 +138,5 @@ canvas {
         navigator.serviceWorker
           .register('service-worker.js', {scope: '.'});
       }
-      <button onclick="myFunction()">Try it</button>
-
-<p>Click the button to create a CANVAS element, with drawings (a red rectangle).</p>
-
-<script>
-function myFunction() {
-    var x = document.createElement("CANVAS");
-    var ctx = x.getContext("2d");
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(20, 20, 150, 100);
-    document.body.appendChild(x);
-}
-</script>
   </body>
 </html>
