@@ -194,14 +194,6 @@ class GameCtrl {
     ))
 
     // Add the feedback on the SVG
-      function myFunction() {
-    var x = document.createElement("CANVAS");
-    var ctx = x.getContext("2d");
-    ctx.fillStyle = "#FF0000";
-    ctx.fillRect(20, 20, 150, 100);
-    document.body.appendChild(x);
-}
-  myFunction;
     if (match)
       PatternSVG.prototype.addCombinaison.apply(attemptSVG, match)
 
