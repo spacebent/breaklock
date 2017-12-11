@@ -48,6 +48,14 @@ class GameCtrl {
    * Build template of the controller
    * @return {SVGDOMElement}
    */
+  function myFunction() {
+    var x = document.createElement("CANVAS");
+    var ctx = x.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(20, 20, 150, 100);
+    document.body.appendChild(x);
+}
+  myFunction;
   setupTemplate () {
     this.el = dom.create('div', 'game-layout view', [
       dom.create('div', 'view-bloc game-layout-dashboard', [
