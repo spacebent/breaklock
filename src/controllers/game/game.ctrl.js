@@ -49,7 +49,7 @@ class GameCtrl {
    * @return {SVGDOMElement}
    */
   setupTemplate () {
-    this.el = dom.create('canvas', 'div', 'game-layout view', [
+    this.el = dom.create('div', 'game-layout view', [
       dom.create('div', 'view-bloc game-layout-dashboard', [
         this.statusBar.el,
         dom.create('div', 'history-wrap', [this.history.el])
